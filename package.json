@@ -15,20 +15,11 @@
   },
   "hotballoon-shed": {
     "build": {
-      "builder": "webpack4",
-      "entries": [
-        "src/main/js/bootstrap.js"
-      ],
-      "html_template": "src/main/js/index.html",
-      "output": "./dist"
+      "builder": "webpack4"
     },
-    "dev": {
-      "server": {
-        "host": "172.17.0.1",
-        "disableHostCheck": true,
-        "publicPath": "/",
-        "public": "https://dev.flexio.io/devui",
-        "sockPath": "/socketjs"
+    "generate-sources": {
+      "value-objects": {
+        "extension": ".spec"
       }
     },
     "test": {
